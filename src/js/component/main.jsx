@@ -4,10 +4,14 @@ import "../../styles/main.css";
 const Main = () => {
 	const [seconds, setSeconds] = useState(0);
 
+	// setInterval(() => {
+	// 	{
+	// 		console.log("hola");
+	// 	}
+	// }, 1000);
+
 	setInterval(() => {
-		{
-			console.log("hola");
-		}
+		setSeconds((time) => time + 1);
 	}, 1000);
 
 	return (
