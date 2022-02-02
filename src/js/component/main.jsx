@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/main.css";
 
 const Main = () => {
-	const [contador, setContador] = useState("");
+	const [seconds, setSeconds] = useState(0);
+
+	setInterval(() => {
+		{
+			console.log("hola");
+		}
+	}, 1000);
 
 	return (
 		<>
@@ -11,7 +17,7 @@ const Main = () => {
 					<div className="icon">
 						<img src="https://img.icons8.com/material-outlined/120/000000/clock--v1.png" />
 					</div>
-					<div className="counter"></div>
+					<div className="secounds">{seconds}</div>
 				</div>
 			</div>
 		</>
